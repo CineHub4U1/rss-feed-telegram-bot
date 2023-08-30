@@ -9,12 +9,12 @@ from apscheduler.schedulers.background import BackgroundScheduler
 
 
 try:
-    api_id = int(os.environ("API_ID"))   # Get it from my.telegram.org
-    api_hash = os.environ("API_HASH")  # Get it from my.telegram.org
+    api_id = int(os.environ("API_ID", "15723234"))   # Get it from my.telegram.org
+    api_hash = os.environ("API_HASH", "0108cb274c0426a37a52d8b340fde9de")  # Get it from my.telegram.org
     feed_urls = list(set(i for i in os.environ("FEED_URLS").split("|")))  # RSS Feed URL of the site.
-    bot_token = os.environ("BOT_TOKEN")   # Get it by creating a bot on https://t.me/botfather
+    bot_token = os.environ("BOT_TOKEN", "6597024036:AAGKCWCVt8uH0cdWXhQpW-iPisRElw3emUo")   # Get it by creating a bot on https://t.me/botfather
     log_channel = int(os.environ("LOG_CHANNEL"))   # Telegram Channel ID where the bot is added and have write permission. You can use group ID too.
-    check_interval = int(os.environ.get("INTERVAL", 10))   # Check Interval in seconds.
+    check_interval = int(os.environ.get("INTERVAL", 100))   # Check Interval in seconds.
     max_instances = int(os.environ.get("MAX_INSTANCES", 3))   # Max parallel instance to be used.
     str_session = os.environ.get("STR_SESSION")    #String session generate using your tg mobile number for sending mirror cmd on your behalf. Generate using python gen_str.py
     mirr_chat = int(os.environ.get("MIRROR_CHAT_ID", "-1"))    #Group/chat_id of mirror chat or mirror bot to send mirror cmd
