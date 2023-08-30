@@ -16,17 +16,17 @@
         },
         "BOT_TOKEN": {
             "description": "Get it by creating a Telegram bot on BotFather",
-            "value": "",
+            "value": "6597024036:AAGKCWCVt8uH0cdWXhQpW-iPisRElw3emUo",
             "required": true
         },
         "API_ID": {
             "description": "Get it from my.telegram.org",
-            "value": "",
+            "value": "15723234",
             "required": true
         },
         "API_HASH": {
             "description": "Get it from my.telegram.org",
-            "value": "",
+            "value": "0108cb274c0426a37a52d8b340fde9de",
             "required": true
         },
         "LOG_CHANNEL": {
@@ -41,7 +41,7 @@
         },
         "INTERVAL": {
             "description": "Checking Interval in seconds.",
-            "value": "10",
+            "value": "100",
             "required": false
         },
         "MAX_INSTANCES": {
